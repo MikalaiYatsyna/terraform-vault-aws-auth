@@ -34,7 +34,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_vault_address"></a> [vault\_address](#input\_vault\_address) | Vault http address | `string` | n/a | yes |
-| <a name="input_vault_token"></a> [vault\_token](#input\_vault\_token) | Vault http address | `string` | n/a | yes |
+| <a name="input_vault_token"></a> [vault\_token](#input\_vault\_token) | Vault root token | `string` | n/a | yes |
 
 ## Outputs
 
