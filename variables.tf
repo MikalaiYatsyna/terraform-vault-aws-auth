@@ -1,7 +1,10 @@
 variable "vault_address" {
-  default = "Vault http address"
+  type = string
+  description = "Vault http address"
 }
 
 variable "vault_token" {
-  default = "Vault http address"
+  type = string
+  description = "Vault http address"
+  sensitive = true
 }

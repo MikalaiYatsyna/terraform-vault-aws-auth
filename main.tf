@@ -17,12 +17,12 @@ resource "vault_aws_auth_backend_role" "aws_backend_role" {
   bound_iam_principal_arns = [data.aws_caller_identity.this.arn]
 }
 
-resource "aws_iam_access_key" "ac_key" {
+resource "aws_iam_access_key" "access_key" {
   user = split(":user/", data.aws_caller_identity.this.arn)[1]
 }
 
 resource "vault_aws_auth_backend_client" "auth_backend_client" {
   backend    = vault_auth_backend.aws_auth.path
-  access_key = aws_iam_access_key.ac_key.id
-  secret_key = aws_iam_access_key.ac_key.secret
+  access_key = aws_iam_access_key.access_key.id
+  secret_key = aws_iam_access_key.access_key.secret
 }

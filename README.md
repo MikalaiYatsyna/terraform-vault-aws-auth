@@ -1,5 +1,5 @@
 ## Introduction
-Terraform module to create enable AWS IAM authentication on Vault
+Terraform module to enable AWS IAM authentication on Vault
 
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
