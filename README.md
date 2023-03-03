@@ -21,7 +21,7 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_iam_access_key.ac_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_access_key) | resource |
+| [aws_iam_access_key.access_key](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/iam_access_key) | resource |
 | [vault_auth_backend.aws_auth](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/auth_backend) | resource |
 | [vault_aws_auth_backend_client.auth_backend_client](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/aws_auth_backend_client) | resource |
 | [vault_aws_auth_backend_role.aws_backend_role](https://registry.terraform.io/providers/hashicorp/vault/latest/docs/resources/aws_auth_backend_role) | resource |
@@ -33,8 +33,8 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_vault_address"></a> [vault\_address](#input\_vault\_address) | n/a | `string` | `"Vault http address"` | no |
-| <a name="input_vault_token"></a> [vault\_token](#input\_vault\_token) | n/a | `string` | `"Vault http address"` | no |
+| <a name="input_vault_address"></a> [vault\_address](#input\_vault\_address) | Vault http address | `string` | n/a | yes |
+| <a name="input_vault_token"></a> [vault\_token](#input\_vault\_token) | Vault http address | `string` | n/a | yes |
 
 ## Outputs
 

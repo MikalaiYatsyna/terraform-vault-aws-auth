@@ -1,10 +1,10 @@
 variable "vault_address" {
-  type = string
+  type        = string
   description = "Vault http address"
 }
 
 variable "vault_token" {
-  type = string
+  type        = string
   description = "Vault http address"
-  sensitive = true
+  sensitive   = true
 }
