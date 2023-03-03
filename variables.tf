@@ -5,6 +5,6 @@ variable "vault_address" {
 
 variable "vault_token" {
   type        = string
-  description = "Vault http address"
+  description = "Vault root token"
   sensitive   = true
 }
