@@ -20,3 +20,7 @@ data "vault_policy_document" "aws_auth_policy" {
 }
 
 data "aws_caller_identity" "this" {}
+
+data "aws_secretsmanager_secret_version" "root_token" {
+  secret_id = var.vault_token_secret_id
+}
